@@ -513,14 +513,8 @@ const sidebars = {
   guidesSidebar: [
     {
       type: "doc",
-      id: "guides/deploy-hyperlane-local-agents",
-      label: "Deploy Hyperlane with Local Agents",
-    },
-    {
-      type: "doc",
       id: "guides/extending-warp-route",
       label: "Extending a Warp Route",
-      
     },
     {
       type: "doc",
@@ -553,11 +547,6 @@ const sidebars = {
           label: "GraphQL API",
         },
       ],
-    },
-    {
-      type: "doc",
-      id: "guides/avs-operator-guide",
-      label: "AVS Operator Guide",
     },
     {
       type: "doc",
@@ -606,6 +595,16 @@ const sidebars = {
 
   operateSidebar: [
     {
+      type: "doc",
+      id: "operate/overview-agents",
+      label: "Overview",
+    },
+    {
+      type: "doc",
+      id: "operate/set-up-agent-keys",
+      label: "Key Management",
+    },
+    {
       type: "category",
       label: "Run Validators",
       link: {
@@ -650,11 +649,6 @@ const sidebars = {
       ],
     },
     {
-      type: "doc",
-      id: "operate/set-up-agent-keys",
-      label: "Agent Keys",
-    },
-    {
       type: "category",
       label: "Agent Config",
       link: {
@@ -671,15 +665,34 @@ const sidebars = {
         },
       ],
     },
+
     {
-      type: "doc",
-      id: "operate/docker-quickstart",
-      label: "Docker Quickstart",
-    },
-    {
-      type: "doc",
-      id: "operate/deploy-with-terraform",
-      label: "Deploy with Terraform",
+      type: "category",
+      label: "Guides",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "guides/deploy-hyperlane-local-agents",
+          label: "Deploy Hyperlane with Local Agents",
+        },
+        {
+          type: "doc",
+          id: "operate/docker-quickstart",
+          label: "Docker Quickstart",
+        },
+        {
+          type: "doc",
+          id: "operate/deploy-with-terraform",
+          label: "Deploy with Terraform",
+        },
+        {
+          type: "doc",
+          id: "guides/avs-operator-guide",
+          label: "AVS Operator Guide",
+        },
+      ],
     },
   ],
 };
