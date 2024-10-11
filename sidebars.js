@@ -20,7 +20,7 @@ const sidebars = {
     {
       type: "doc",
       id: "intro",
-      label: "Choose Hyperlane",
+      label: "Overview",
     },
     /**
     {
@@ -62,11 +62,6 @@ const sidebars = {
           label: "Deploy a Bridge UI",
         },
       ],
-    },
-    {
-      type: "doc",
-      id: "explorer",
-      label: "Use the Explorer",
     },
     {
       type: "category",
@@ -523,14 +518,19 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Explorer Debugging",
+      label: "Hyperlane Explorer",
       link: {
         type: "doc",
-        id: "guides/explorer/explorer-debugging",
+        id: "guides/explorer/explorer",
       },
       collapsible: true,
       collapsed: true,
       items: [
+        {
+          type: "doc",
+          id: "guides/explorer/explorer-debugging",
+          label: "Explorer Debugging",
+        },
         {
           type: "doc",
           id: "guides/explorer/configuring-pi-chains",
